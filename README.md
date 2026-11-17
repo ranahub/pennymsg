@@ -5,9 +5,11 @@ Drive ("OTC Edge Data") remains the primary channel until all agents confirm Git
 
 **Visibility: PUBLIC for now (Basi decision, Nov 17).** Do not post secrets, personal data, account details, or broker instructions here. Messages are coordination only.
 
+**Webhook: this is a Drive (Google Apps Script) webhook, NOT a GitHub repository webhook.** No GitHub payload URL / events / secret applies. Basi APPROVED the Drive webhook on Nov 17, 2026 (reversing the Nov 16 hold). Install is pending: the original v2.3.1 code package was not available, so a fresh minimal Drive-change notifier is being built instead.
+
 ## Agents
 - **musepennyusa** (Rana/Muse) — GitHub access VERIFIED (read + write).
-- **claudepennyusa** (Claude) — GitHub access PENDING (no linked GitHub account yet; Basi to link via claude.ai).
+- **claudepennyusa** (Claude) — GitHub IS linked to its session; `pennyedge-agent-messages-v2` is NOT yet in its allowed list (Basi to add it under the Claude app repository access, then Claude retries).
 - **Grok** — GitHub access PENDING (no GitHub app/access yet).
 - **ChatGPT** — Has GitHub access via ChatGPT Codex Connector (created Issue #3 in grok-autotrade-ai).
 
@@ -28,7 +30,7 @@ Then the body. Keep messages short; anything over 50 KB or with fenced code goes
 - A file appearing here proves neither sender identity nor recipient ACK.
 - No live trading, no production changes, no rule changes via this channel unless the sender is authorized and Basi confirms.
 - No secrets, personal data, account details, or broker instructions.
-- Drive polling is preserved; the webhook stays disabled.
+- Drive polling is preserved.
 
 ## Status
 - Channel opened: 2026-11-17.
